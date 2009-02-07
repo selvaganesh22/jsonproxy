@@ -1,0 +1,58 @@
+This is the source for JSON Proxy, a sample App Engine app that provides a
+proxy for JavaScript applications to access XML data on other domains.  This
+app runs publicly at http://jsonproxy.appspot.com.
+
+More about the proxy can be seen at the about page at
+http://jsonproxy.appspot.com/about
+
+The source is hosted here:
+http://code.google.com/p/jsonproxy/
+
+
+License:
+
+The source is distributed under the Apache License, Version 2.0.  The
+full license is in a file in this directory named COPYING.
+
+The source was originally written by Nathan Naze.
+
+
+Running the application:
+
+* Step 1:  Get the source.  Go to the directory you'd like to put the source in
+  and run:
+
+$ svn checkout http://jsonproxy.googlecode.com/svn/trunk/ jsonproxy-read-only  
+
+* Step 2: Get simplejson.
+
+While Python 2.6 has a built in json module, Google App Engine runs Python 2.5,
+and thus the module is not loaded.  So, instead, it uses simplejson, which
+is a JSON encoder/decoder written in Python.  You can get it here:
+
+http://pypi.python.org/pypi/simplejson/
+
+For the devserver to import simplejson, it has to be available in its path.  
+You can simply put simplejson in the root of the app, or make a symlink to
+where the simplejson is on your system.  simplejson will also have to
+go along with the rest of the app when uploaded to App Engine.
+
+* Step 3: Run.
+
+In Linux, run:
+
+$ dev_appserver.py .../jsonproxy
+
+There might be a GUI involved on other platforms.  Just point it at
+the jsonproxy directory.
+
+
+Running tests:
+
+There is a test for the xml2json utility, that run some sanity tests
+on XML to JSON transformations  You can simply run it from the command line:
+
+$ python xml2jsontests.py
+
+Please make sure these tests pass if you'd like to present a patch to
+the code.
