@@ -42,7 +42,11 @@ def FetchUrlContent(url):
   Raises:
     LookupError: The URL was not able to be fetched.
   """
-  request = urlfetch.fetch( url)
+  content = memcache.get(url)
+  if content:
+    return content
+
+  request = urlfetch.fetch(url)
 
   if request.status_code == 200:
     content = request.content
