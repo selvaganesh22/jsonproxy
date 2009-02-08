@@ -103,7 +103,7 @@ the error string will be at the root of the JSON object under the
 special key "$error".  For example: <tt>{"$error": "error string"}</tt></p>
 
 <p>This proxy was written by <a href="http://nanaze.com">Nathan
-Naze</a>.  I hope to release the source and compelling examples soon.
+Naze</a>.  The source is available at <a href="http://code.google.com/p/jsonproxy/">http://code.google.com/p/jsonproxy/</a>.
 </p>
 </div>
 {% endblock %}

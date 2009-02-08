@@ -12,7 +12,8 @@
       </p>
       <p>Enter the URL of a publicly accessible XML document.</p>
       <p><a href="/about">Why is this useful?</a> -
-      <a href="/examples">Examples</a>
+      <a href="/examples">Examples</a> -
+      <a href="http://code.google.com/p/jsonproxy">source</a>
       </p>
       <p class="fine_print">
         powered by <a href="http://code.google.com/appengine/">
@@ -21,7 +22,7 @@
 {% comment %}
       <p class="fine_print">
       <a href="/docs">docs</a> -
-      <a href="http://code.google.com/p/xml2json">source</a>
+
       </p>
 
 {% endcomment %}
