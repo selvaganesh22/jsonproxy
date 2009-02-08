@@ -13,7 +13,7 @@
       <p>Enter the URL of a publicly accessible XML document.</p>
       <p><a href="/about">Why is this useful?</a> -
       <a href="/examples">Examples</a> -
-      <a href="http://code.google.com/p/jsonproxy">source</a>
+      <a href="http://code.google.com/p/jsonproxy">Source</a>
       </p>
       <p class="fine_print">
         powered by <a href="http://code.google.com/appengine/">
